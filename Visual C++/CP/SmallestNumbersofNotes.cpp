@@ -1,0 +1,57 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int t,n,c,i=0,s;
+    cin>>t;
+    if(t>=1&&t<=1000)
+    {
+        while(i<=t-1)
+        {
+            cin>>n;
+            c=0;
+            s=0;
+            if(n>=1&&n<=1000000)
+            {
+                while(n>=100)
+                {
+                    s=s+100;
+                    n=n-100;
+                    c=c+1;
+                }
+                while(n>=50)
+                {
+                    s=s+50;
+                    n=n-50;
+                    c=c+1;
+                }
+                while(n>=10)
+                {
+                    s=s+10;
+                    n=n-10;
+                    c=c+1;
+                }
+                while(n>=5)
+                {
+                    s=s+5;
+                    n=n-5;
+                    c=c+1;
+                }
+                while(n>=2)
+                {
+                    s=s+2;
+                    n=n-2;
+                    c=c+1;
+                }
+                while(n>=1)
+                {
+                    s=s+1;
+                    n=n-1;
+                    c=c+1;
+                }
+                i=i+1;
+                cout<<c<<endl;
+            }
+        }
+    }
+}
