@@ -43,11 +43,7 @@ int main()
             cout<<0<<endl;
         }
         else{
-        while(a % b != 0){
-            a += 1;
-            count += 1;
-        }
-        cout<<count<<endl;
+            cout<<b - a % b<<endl;
         }
     }
  
